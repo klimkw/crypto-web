@@ -1,0 +1,25 @@
+.exchange {
+  margin: 1em;
+}
+
+.xcBtn {
+  background-color: black !important;
+  width: 100%;
+  height: 100%;
+  border-radius: 10% !important;
+}
+
+.xcBtn:hover {
+  border-color: white !important;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+logo {
+  width: 100%;
+  height: 100%;
+}
