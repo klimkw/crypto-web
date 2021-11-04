@@ -2,15 +2,58 @@
   margin: 1em;
 }
 
-.xcBtn {
-  background-color: black !important;
-  width: 100%;
-  height: 100%;
-  border-radius: 10% !important;
+.btn-col {
+  display: flex;
 }
 
-.xcBtn:hover {
-  border-color: white !important;
+.xc-btn {
+  align-self: stretch;
+  width: 100%;
+  background-color: black;
+  transition: color;
+  border-radius: 10%;
+}
+
+.buy-btn {
+  color:forestgreen;
+  border-color: forestgreen;
+}
+
+.buy-btn:hover {
+  background-color: forestgreen;
+  color: black;
+}
+
+.buy-recommend {
+  font-weight: bolder;
+  animation: buyFlashing 1s infinite;
+}
+
+@keyframes buyFlashing {
+  0% {color:greenyellow; border-color: greenyellow;}
+  50% {color:forestgreen; border-color: forestgreen;}
+  100% {color:greenyellow; border-color: greenyellow;} 
+}
+
+.sell-btn {
+  color: red;
+  border-color: red;
+}
+
+.sell-btn:hover {
+  background-color: red;
+  color: black;
+}
+
+.sell-recommend {
+  font-weight: bolder;
+  animation: sellFlashing 1s infinite;
+}
+
+@keyframes sellFlashing {
+  0% {color:red; border-color: red;}
+  50% {color:palevioletred; border-color: palevioletred;}
+  100% {color:red; border-color: red;} 
 }
 
 img {
