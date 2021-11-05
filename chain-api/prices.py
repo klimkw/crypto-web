@@ -25,6 +25,7 @@ class Prices:
         self._process_exchange(name, ask, bid)
     
 
+    # Updates recommendations (if neccesary)
     def _process_exchange(self, name, ask, bid):
         if ask < self.buy_recommendation[0]:
             self.buy_recommendation = (ask, name)
