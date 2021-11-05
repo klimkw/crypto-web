@@ -39,6 +39,7 @@ class Prices:
 
 
     def result_return(self):
+        # Structured for scalability (more exchanges or different data)
         return {
             "exchanges": self.prices,
             "recommendations": {
@@ -60,5 +61,4 @@ def prices():
     exchange_prices.process_kraken(kraken_json)
 
 
-    # Structured for scalability (more exchanges or different data)
     return exchange_prices.result_return()
