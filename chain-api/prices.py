@@ -1,9 +1,13 @@
 from flask import Flask
 import requests
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../build', static_url_path='/')
 KRAKEN_API_ENDPOINT = 'https://api.kraken.com/0/public/Ticker?pair=XBTUSD'
 GEMINI_API_ENDPOINT = 'https://api.gemini.com/v1/pubticker/btcusd'
+
+@app.route('/')
+def index():
+    return app.send_static_file('index.html')
 
 class Prices:
     def __init__(self):
