@@ -1,0 +1,1 @@
+web: gunicorn --pythonpath chain-api prices:app
