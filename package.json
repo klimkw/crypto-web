@@ -11,7 +11,9 @@
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "reactstrap": "^9.0.0",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "Flask": "2.0.2",
+    "gunicorn": "20.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
