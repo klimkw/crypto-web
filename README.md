@@ -25,7 +25,9 @@ https://stormy-meadow-72770.herokuapp.com/
 `yarn start-api`
 
 ## Explaining the Implementation:
-Backend is built on Python + Flask, pulling in bid/ask price of BTC from Kraken and Gemini, using their free REST APIs.
+Backend is built on Python + Flask, pulling in bid/ask price of BTC from Kraken and Gemini, using their free REST APIs. Computation of which buy/sell price is recommended is done in the Python layer on processing each exchange information and storing it in the dictionary before returning in the form of a JSON as a REST API call.
+
+Frontend is built on React, using reactstrap for layout organization. It make API calls to the backend in 1s intervals to simulate an almost-live stream. Based on the result of the API call, the frontend will return a button that is flashing for recommended buys or sells and a regular button otherwise.
 
 ## Answers to Questionnaire:
 
