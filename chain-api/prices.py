@@ -1,7 +1,7 @@
 from flask import Flask
 import requests
 
-app = Flask(__name__, static_folder='../build', static_url_path='/')
+app = Flask(__name__, static_folder='../chain-react/build', static_url_path='/')
 KRAKEN_API_ENDPOINT = 'https://api.kraken.com/0/public/Ticker?pair=XBTUSD'
 GEMINI_API_ENDPOINT = 'https://api.gemini.com/v1/pubticker/btcusd'
 
